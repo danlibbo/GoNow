@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "GoNow URL Opener",
+  "version": "1.0",
+  "description": "Open a specific URL based on input",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "commands": {
+    "open-url": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U"
+      },
+      "description": "Open the specific URL"
+    }
+  }
+}
